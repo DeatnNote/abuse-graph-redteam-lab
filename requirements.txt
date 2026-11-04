@@ -1,0 +1,11 @@
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+scikit-learn>=1.4
+lightgbm>=4.3
+matplotlib>=3.8
+mcp>=1.2
+pytest>=8
+# optional
+# pyspark>=3.5        spark/connected_components.py (Java 17+)
+# anthropic           agl.redteam.LLMPlanner

@@ -1,0 +1,9 @@
+{
+  "accounts": 239371,
+  "clusters": 198651,
+  "iterations": 6,
+  "matches_scipy": true,
+  "seconds_spark_local2cores": 58.9,
+  "seconds_scipy": 0.13,
+  "largest_cluster": 194
+}

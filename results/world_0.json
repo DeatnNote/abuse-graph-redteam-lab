@@ -1,0 +1,216 @@
+{
+  "seed": 0,
+  "accounts": 24175,
+  "kinds": {
+    "legit": 20000,
+    "agency": 2733,
+    "fraud": 1442
+  },
+  "test_rings": 32,
+  "train_rings": 28,
+  "detectors": {
+    "v0_account_only": {
+      "ap": 0.6126691383739931,
+      "account_recall_at_threshold": 0.41815856777493604,
+      "false_positive_rate": 0.009093999660037396,
+      "agency_fpr": 0.0,
+      "ring_recall": 0.28125,
+      "evasion_by_budget": {
+        "0": 0.71875,
+        "1": 0.71875,
+        "5": 1.0,
+        "10": 1.0,
+        "25": 1.0,
+        "50": 1.0,
+        "100": 1.0,
+        "200": 1.0
+      },
+      "cost_to_evade": {
+        "rings": 32,
+        "evaded": 32,
+        "median_cost_if_evaded": 0.0
+      },
+      "actions_used": {
+        "fresh_emails": 32
+      }
+    },
+    "v1_graph": {
+      "ap": 1.0,
+      "account_recall_at_threshold": 1.0,
+      "false_positive_rate": 0.0004249532551419344,
+      "agency_fpr": 0.002927400468384075,
+      "ring_recall": 1.0,
+      "evasion_by_budget": {
+        "0": 0.0,
+        "1": 0.0,
+        "5": 0.0,
+        "10": 0.0,
+        "25": 0.5,
+        "50": 0.96875,
+        "100": 1.0,
+        "200": 1.0
+      },
+      "cost_to_evade": {
+        "rings": 32,
+        "evaded": 32,
+        "median_cost_if_evaded": 23.2
+      },
+      "actions_used": {
+        "fresh_emails": 32,
+        "paraphrase_ads": 32,
+        "prepaid_cards": 31,
+        "new_devices": 28,
+        "aged_domains": 1
+      }
+    },
+    "v1_graph_no_entity_resolution": {
+      "ap": 1.0,
+      "account_recall_at_threshold": 1.0,
+      "false_positive_rate": 0.02235254122046575,
+      "agency_fpr": 0.15046838407494145,
+      "ring_recall": 1.0,
+      "evasion_by_budget": {
+        "0": 0.0,
+        "1": 0.0,
+        "5": 0.03125,
+        "10": 0.03125,
+        "25": 0.5625,
+        "50": 0.9375,
+        "100": 0.96875,
+        "200": 0.96875
+      },
+      "cost_to_evade": {
+        "rings": 32,
+        "evaded": 31,
+        "median_cost_if_evaded": 18.2
+      },
+      "actions_used": {
+        "fresh_emails": 32,
+        "paraphrase_ads": 32,
+        "prepaid_cards": 26,
+        "new_devices": 26,
+        "aged_domains": 5
+      }
+    },
+    "v2_naive_with_spoofable_signal": {
+      "ap": 1.0,
+      "account_recall_at_threshold": 1.0,
+      "false_positive_rate": 0.000679925208227095,
+      "agency_fpr": 0.00468384074941452,
+      "ring_recall": 1.0,
+      "evasion_by_budget": {
+        "0": 0.0,
+        "1": 0.0,
+        "5": 1.0,
+        "10": 1.0,
+        "25": 1.0,
+        "50": 1.0,
+        "100": 1.0,
+        "200": 1.0
+      },
+      "cost_to_evade": {
+        "rings": 32,
+        "evaded": 32,
+        "median_cost_if_evaded": 5.0
+      },
+      "actions_used": {
+        "residential_ips": 32
+      }
+    },
+    "v2_round1": {
+      "ap": 1.0,
+      "account_recall_at_threshold": 1.0,
+      "false_positive_rate": 0.000679925208227095,
+      "agency_fpr": 0.00468384074941452,
+      "ring_recall": 1.0,
+      "evasion_by_budget": {
+        "0": 0.0,
+        "1": 0.0,
+        "5": 0.3125,
+        "10": 1.0,
+        "25": 1.0,
+        "50": 1.0,
+        "100": 1.0,
+        "200": 1.0
+      },
+      "cost_to_evade": {
+        "rings": 32,
+        "evaded": 32,
+        "median_cost_if_evaded": 5.2
+      },
+      "actions_used": {
+        "residential_ips": 32,
+        "paraphrase_ads": 22
+      }
+    },
+    "v2_round2": {
+      "ap": 0.9999999999999999,
+      "account_recall_at_threshold": 1.0,
+      "false_positive_rate": 0.0007649158592554819,
+      "agency_fpr": 0.00468384074941452,
+      "ring_recall": 1.0,
+      "evasion_by_budget": {
+        "0": 0.0,
+        "1": 0.0,
+        "5": 0.0,
+        "10": 0.03125,
+        "25": 0.09375,
+        "50": 0.6875,
+        "100": 0.84375,
+        "200": 1.0
+      },
+      "cost_to_evade": {
+        "rings": 32,
+        "evaded": 32,
+        "median_cost_if_evaded": 28.0
+      },
+      "actions_used": {
+        "new_devices": 32,
+        "fresh_emails": 29,
+        "prepaid_cards": 27,
+        "paraphrase_ads": 9,
+        "aged_domains": 9,
+        "stagger_creation": 6,
+        "credit_cards": 4,
+        "residential_ips": 2,
+        "agency_camouflage": 2,
+        "email_variants": 1
+      }
+    },
+    "v2_round3": {
+      "ap": 1.0,
+      "account_recall_at_threshold": 1.0,
+      "false_positive_rate": 0.006374298827129016,
+      "agency_fpr": 0.04332552693208431,
+      "ring_recall": 1.0,
+      "evasion_by_budget": {
+        "0": 0.0,
+        "1": 0.0,
+        "5": 0.0,
+        "10": 0.03125,
+        "25": 0.03125,
+        "50": 0.1875,
+        "100": 0.3125,
+        "200": 0.84375
+      },
+      "cost_to_evade": {
+        "rings": 32,
+        "evaded": 27,
+        "median_cost_if_evaded": 146.0
+      },
+      "actions_used": {
+        "new_devices": 28,
+        "fresh_emails": 26,
+        "agency_camouflage": 26,
+        "paraphrase_ads": 23,
+        "credit_cards": 22,
+        "residential_ips": 14,
+        "email_variants": 13,
+        "prepaid_cards": 13,
+        "stagger_creation": 9,
+        "aged_domains": 3
+      }
+    }
+  },
+  "seconds": 410.99107909202576
+}
